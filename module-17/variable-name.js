@@ -1,32 +1,30 @@
-var price = 23;
+// var price = 23;
 
+// //1. variable name can not be any reserve keyword
+// var false = 90;
+// var return = true;
 
-//1. variable name can not be any reserve keyword
-var false = 90;
-var return = true;
+// //2. variable name has to be in one word. No space
 
+// var my name is = "nayim"
 
-//2. variable name has to be in one word. No space
+// //3. variable name can not have quotation
 
-var my name is = "nayim"
+// var "name" = "tom";
 
-//3. variable name can not have quotation
+// // 4. variable name can not start with a number but can ends with a number
 
-var "name" = "tom";
+// var 87club = 23;
+// var club5 = 47;
 
-// 4. variable name can not start with a number but can ends with a number
+// //5. hot use log name
 
-var 87club = 23;
-var club5 = 47;
+// //can not use dash
 
-//5. hot use log name
+// var user-name = "Hossen";
 
-//can not use dash
+// var user_name = "hossen"; //snake case
 
-var user-name = "Hossen";
+// var userHomeAddress = "Dhaka"; // camel case: we will use this
 
-var user_name = "hossen"; //snake case
-
-var userHomeAddress = "Dhaka"; // camel case: we will use this
-
-var UserPhoneNumber = "01772936103"; //pascal case
+// var UserPhoneNumber = "01772936103"; //pascal case
