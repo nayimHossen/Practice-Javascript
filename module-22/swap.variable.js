@@ -3,12 +3,18 @@
 
 // console.log(first, second);
 
+// //this is wrong approach
+// // // first = second;
+// // // second = first;
+
+// //this is right
+// // let temp = first;
+
 // // first = second;
-// // second = first;
+// // second = temp;
 
-// let temp = first;
+// //approach second
 
-// first = second;
-// second = temp;
+// [first, second] = [second, first];
 
 // console.log(first, second);
