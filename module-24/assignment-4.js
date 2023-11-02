@@ -23,5 +23,24 @@ oilPrice;
     bus remaining ---> 15
     microbus ---> 4
     public bus fare ---> 250
+
+
+    129
+    bus remaining --> 29
+    microbus ---> 7
+    public bus fare ---> 
 */
 publicBusFare;
+
+//5.
+/*
+    {name: "Tom", friend: "Rock"}
+    {name: "Rock", friend: "Tom"}
+
+    true
+
+
+    {name: "Chris", "friend: "John"}
+    {name: "Raz", "friend: "Gail"}
+*/
+isBestFriend;
