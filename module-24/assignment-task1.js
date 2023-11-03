@@ -100,5 +100,5 @@ function gemsToDiamond(friend1, friend2, friend3) {
   }
 }
 
-const result = gemsToDiamond(1, 1, 1);
-console.log(result);
+const problem5 = gemsToDiamond(1, 1, 1);
+// console.log(problem5);
