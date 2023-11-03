@@ -2,9 +2,9 @@
 //   if (number < 7) {
 //     return number - 7;
 //   } else {
-//     return 7 * 2;
+//     return number * 2;
 //   }
 // }
 
-// const result = isLGSeven(6);
+// const result = isLGSeven(15);
 // console.log(result);
