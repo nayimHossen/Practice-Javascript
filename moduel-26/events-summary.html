@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Javascript DOM Summary</h1>
+    <h3 id="status">Default Text</h3>
+    <h3 id="set-value">Default input text</h3>
+    <input id="input-filed" type="text" />
+    <button id="btn-update">Update</button>
+    <br />
+    <br />
+    <button onclick="handleOnClick()">
+      Handle Event by add onclick function
+    </button>
+
+    <button id="event-listener">Handle event by addEventListener</button>
+
+    <script>
+      function handleOnClick() {
+        const handlerStatus = document.getElementById("status");
+        handlerStatus.innerText =
+          "Handled by function attached on onclick attribute";
+      }
+
+      // option- 2
+      document
+        .getElementById("event-listener")
+        .addEventListener("click", function () {
+          document.getElementById("status").innerText = "I am Nayim Hossen";
+        });
+
+      // option - 3
+
+      document
+        .getElementById("btn-update")
+        .addEventListener("click", function () {
+          let inputText = document.getElementById("input-filed").value;
+
+          document.getElementById("set-value").innerText = inputText;
+        });
+    </script>
+  </body>
+</html>

@@ -9,11 +9,21 @@
     <h2>Dom er ajke special events</h2>
 
     <button id="make-blue">Make blue</button>
+    <button id="make-pink">Make pink</button>
+
+    <button id="tomato">Tomato</button>
 
     <script>
+      const pinkButton = document.getElementById("make-pink");
+      pinkButton.addEventListener("click", makePink);
+
+      function makePink() {
+        document.body.style.backgroundColor = "pink";
+      }
       const makeBlueColor = document.getElementById("make-blue");
       makeBlueColor.onclick = function makeBlue() {
         document.body.style.backgroundColor = "gray";
+        console.log("click");
       };
     </script>
     <script src="js/events.js"></script>
