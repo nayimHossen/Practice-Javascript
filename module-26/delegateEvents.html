@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Explore Delegate Events</h1>
+    <section>
+      <ul id="item-container">
+        <li id="item">Lorem ipsum dolor sit amet.</li>
+        <li id="item">Ullam fugit repellendus ratione soluta.</li>
+        <li id="item">Dicta impedit iste assumenda in.</li>
+        <li id="item">Quod tenetur pariatur placeat necessitatibus!</li>
+        <li id="item">Necessitatibus voluptas minus laborum dolorem?</li>
+        <li id="item">Laborum, blanditiis nam. Dignissimos, quos?</li>
+      </ul>
+
+      <button id="btn-add">Add new item</button>
+    </section>
+
+    <script>
+      document
+        .getElementById("item-container")
+        .addEventListener("click", function (e) {
+          e.target.parentNode.removeChild(e.target);
+        });
+
+      document
+        .getElementById("btn-add")
+        .addEventListener("click", function (e) {
+          const itemContainer = document.getElementById("item-container");
+
+          const li = document.createElement("li");
+          li.innerText = "new item added";
+          itemContainer.appendChild(li);
+        });
+    </script>
+  </body>
+</html>
