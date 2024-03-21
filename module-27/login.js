@@ -3,8 +3,8 @@ document.getElementById("btn-submit").addEventListener("click", function (e) {
   const password = document.getElementById("password").value;
 
   if (email === "mail.nayimhossen@gmail.com" && password === "nayim") {
-    console.log("valid user");
+    window.location.href = "bank.html";
   } else {
-    console.log("invalid user");
+    alert("Invalid email or password");
   }
 });
