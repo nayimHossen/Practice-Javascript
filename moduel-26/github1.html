@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="text">Hello, Welcome to the Bangladesh</h1>
+    <input id="input-box" type="text" placeholder="Please type delete" />
+    <button disabled id="btn-delete">Delete</button>
+
+    <script>
+      document
+        .getElementById("input-box")
+        .addEventListener("keyup", function (e) {
+          const inputText = e.target.value;
+
+          if (inputText === "delete") {
+            document.getElementById("btn-delete").removeAttribute("disabled");
+          } else {
+            document
+              .getElementById("btn-delete")
+              .setAttribute("disabled", true);
+          }
+        });
+
+      document
+        .getElementById("btn-delete")
+        .addEventListener("click", function () {
+          document.getElementById("text").style.display = "none";
+        });
+    </script>
+  </body>
+</html>
