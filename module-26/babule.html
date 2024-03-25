@@ -13,9 +13,11 @@
       }
       body {
         border: 2px solid greenyellow;
+        font-size: 20px;
       }
       section {
         border: 2px solid blue;
+        background-color: yellow;
       }
     </style>
   </head>
@@ -35,33 +37,33 @@
 
     <script>
       document.getElementById("item-2").addEventListener("click", function (e) {
-        console.log("item-2 clicked");
+        // console.log("item-2 clicked");
         e.stopImmediatePropagation();
       });
 
       document.getElementById("item-3").addEventListener("click", function (e) {
-        console.log("item-3 clicked");
+        // console.log("item-3 clicked");
       });
 
       document.getElementById("item-4").addEventListener("click", function (e) {
-        console.log("item-4 clicked");
+        // console.log("item-4 clicked");
       });
 
       document.getElementById("item-3").addEventListener("click", function (e) {
-        console.log("item-3 clicked");
+        // console.log("item-3 clicked");
         e.stopPropagation();
       });
 
       document.getElementById("list-ul").addEventListener("click", function () {
-        console.log("ul clicked");
+        // console.log("ul clicked");
       });
       document
         .getElementById("list-container")
         .addEventListener("click", function () {
-          console.log("container clicked");
+          // console.log("container clicked");
         });
       document.getElementById("body").addEventListener("click", function () {
-        console.log("body clicked");
+        // console.log("body clicked");
       });
     </script>
   </body>
